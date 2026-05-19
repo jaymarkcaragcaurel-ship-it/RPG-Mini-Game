@@ -1420,18 +1420,18 @@ public class rpg {
 
     static int[] DeriveForbiddenAffinities(double[] normalized, int primary_affinity, int secondary_affinity) {
         int[][] ForbiddenWeaponsMapping = {
-            { 3, 4, 2, 1 },     // 0  Blade     → forbids Totem, Orb, Grimoire, Staff
-            { 10, 6, 8, 7 },    // 1  Staff     → forbids Scythe, Crossbow, Shield, Fist
-            { 10, 11, 8, 7 },   // 2  Grimoire  → forbids Scythe, Spear, Shield, Fist
-            { 10, 7, 6 },       // 3  Totem     → forbids Scythe, Fist, Crossbow
-            { 7, 10, 11 },      // 4  Orb       → forbids Fist, Scythe, Spear
-            { 8, 7 },           // 5  Bow       → forbids Shield, Fist
-            { 8, 7, 3 },        // 6  Crossbow  → forbids Shield, Fist, Totem
-            { 4, 3, 2, 1, 5 },        // 7  Fist      → forbids Orb, Totem, Grimoire
-            { 9, 4, 2, 1, 5, 6 },        // 8  Shield    → forbids Dagger, Orb, Grimoire
-            { 8, 11, 10 },      // 9  Dagger    → forbids Shield, Spear, Scythe
-            { 8, 3, 4 },        // 10 Scythe    → forbids Shield, Totem, Orb
-            { 2, 4, 3 },        // 11 Spear     → forbids Grimoire, Orb, Totem
+            { 3, 4, 2, 1 },     // 0  Blade 
+            { 10, 6, 8, 7 },    // 1  Staff
+            { 10, 11, 8, 7 },   // 2  Grimoire
+            { 10, 7, 6 },       // 3  Totem
+            { 7, 10, 11 },      // 4  Orb
+            { 8, 7 },           // 5  Bow
+            { 8, 7, 3 },        // 6  Crossbow 
+            { 4, 3, 2, 1, 5 },        // 7  Fist
+            { 9, 4, 2, 1, 5, 6 },        // 8  Shield
+            { 8, 11, 10 },      // 9  Dagger
+            { 8, 3, 4 },        // 10 Scythe
+            { 2, 4, 3 },        // 11 Spear
         };
 
         int[] Primary   = ForbiddenWeaponsMapping[primary_affinity];
